@@ -13,12 +13,6 @@
 
 所有的代码均在 [./codes/](./codes/) 目录。代码 `xxx.ts` 对应的测试文件为 `xxx_test.ts`。
 
-## 捐赠
-
-如果这个教程对你有帮助，欢迎 star。如果这个仓库帮你提升了技能，可以请我喝杯咖啡：
-
-<p align="center"><img src="https://cdn.devtips.cn/buy-me-a-coffee-wechat.png?imageView2/2/w/320/interlace/1" width="320" height="320" alt="" /></p>
-
 ## 说明
 
 本教程不是一本参考手册，因此不会涉及到所有的 Deno API。如果想查看所有的 Deno API 文档，可以访问 https://deno.dev/typedoc/index.html 来查看简体中文版。
@@ -34,6 +28,12 @@
    1. Linux Shell 自动补全 deno completions
 
 [更多...](./docs/)
+
+## 捐赠
+
+如果这个教程对你有帮助，欢迎 star。如果这个仓库帮你提升了技能，可以请我喝杯咖啡：
+
+<p align="center"><img src="https://cdn.devtips.cn/buy-me-a-coffee-wechat.png?imageView2/2/w/320/interlace/1" width="320" height="320" alt="" /></p>
 
 ## 许可协议
 
