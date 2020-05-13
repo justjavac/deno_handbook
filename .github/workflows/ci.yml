@@ -1,0 +1,35 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: ${{ matrix.kind }} ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macOS-latest, ubuntu-latest, windows-latest]
+
+    env:
+      GH_ACTIONS: true
+      DENO_BUILD_MODE: release
+      V8_BINARY: true
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Deno
+        uses: denolib/setup-deno@master
+        with:
+          deno-version: 1.0.0-rc3
+
+      - name: Cache Deno Generated Files
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/deno
+          key: ${{ runner.os }}-deno-cache-${{ hashFiles('**/mod.ts') }}
+
+      - name: Format
+        run: deno fmt ./codes --check
+
+      - name: Tests
+        run: deno test ./codes
