@@ -21,7 +21,7 @@
 
 ## 说明
 
-本教程不是一本参考手册，因此不会涉及到所有的 Deno Api。如果想查看所有的 Deno Api 文档，可以访问 https://deno.dev/typedoc/index.html 来查看简体中文版。
+本教程不是一本参考手册，因此不会涉及到所有的 Deno API。如果想查看所有的 Deno API 文档，可以访问 https://deno.dev/typedoc/index.html 来查看简体中文版。
 
 ## 目录
 
