@@ -11,7 +11,7 @@
 
 本教程的目的是为 JavaScript/TypeScript 开发者提供一个 Deno 入门指南，虽然 Deno 是使用 Rust 和 V8 开发，但是本教程不会涉及到任何 Rust 与 V8 引擎相关知识。
 
-所有的代码均在 [./codes/](./codes/) 目录。代码 `xxx.ts` 对应的测试文件为 `xxx_test.ts`。
+所有的代码均在 [./codes/](https://github.com/justjavac/deno_handbook/codes/) 目录。代码 `xxx.ts` 对应的测试文件为 `xxx_test.ts`。
 
 ## 说明
 
