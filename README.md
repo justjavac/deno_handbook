@@ -1,7 +1,7 @@
 # Deno 入门指南，入门教程，初学者教程
 
 [![Build Status](https://github.com/justjavac/deno_handbook/workflows/ci/badge.svg?branch=master)](https://github.com/justjavac/deno_handbook/actions)
-[![](https://img.shields.io/badge/deno-v1.0.0--rc3-green.svg)](https://github.com/denoland/deno)
+[![](https://img.shields.io/badge/deno-v1.0.0-green.svg)](https://github.com/denoland/deno)
 
 > **长期更新**，面向新人的 Deno 入门教程。
 
