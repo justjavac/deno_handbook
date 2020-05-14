@@ -20,7 +20,7 @@ jobs:
       - name: Setup Deno
         uses: denolib/setup-deno@master
         with:
-          deno-version: 1.0.0-rc3
+          deno-version: 1.0.0
 
       - name: Cache Deno Generated Files
         uses: actions/cache@v1
