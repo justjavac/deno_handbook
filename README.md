@@ -19,10 +19,10 @@
 
 ## 目录
 
-1. [安装 Deno](./docs/01-install-deno.md)
-1. [配置 Deno 开发环境](./docs/02-setup-environment.md)
-1. [Hello World](./docs/03-hello-world-with-deno.md)
-1. [Deno 命令行](./docs/04-deno-cli-sub-commond.md)
+1. [安装 Deno](./docs/install-deno.md)
+1. [配置 Deno 开发环境](./docs/setup-environment.md)
+1. [Hello World](./docs/hello-world-with-deno.md)
+1. [Deno 命令行](./docs/deno-cli-sub-commond.md)
    1. 打包 deno bundle
    1. 缓存 deno cache
    1. Linux Shell 自动补全 deno completions

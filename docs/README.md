@@ -2,10 +2,10 @@
 
 > **长期更新**，面向新人的 Deno 入门教程。
 
-1. [安装 Deno](./01-install-deno.md)
-1. [配置 Deno 开发环境](./02-setup-environment.md)
-1. [Hello World](./03-hello-world-with-deno.md)
-1. [Deno 命令行](./04-deno-cli-sub-commond.md)
+1. [安装 Deno](./install-deno.md)
+1. [配置 Deno 开发环境](./setup-environment.md)
+1. [Hello World](./hello-world-with-deno.md)
+1. [Deno 命令行](./deno-cli-sub-commond.md)
    1. 打包 deno bundle
    1. 缓存 deno cache
    1. Linux Shell 自动补全 deno completions
