@@ -17,7 +17,7 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 Windows 系统上使用 PowerShell:
 
 ```ps
-wr https://deno.land/x/install/install.ps1 -useb | iex
+iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
 **⚠️注意**：deno_install 会从 GitHub Release 下载 Deno 可执行文件，由于 GitHub 文件托管在 aws 导致国内访问不是很顺畅。
