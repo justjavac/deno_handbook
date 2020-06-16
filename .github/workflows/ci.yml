@@ -31,6 +31,7 @@ jobs:
 
       - name: Build
         run: |
+          export PATH="$DENO_INSTALL/bin:$PATH"
           deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.6/mod.ts
           pagic build
 
