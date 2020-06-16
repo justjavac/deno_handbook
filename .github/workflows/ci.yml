@@ -24,13 +24,7 @@ jobs:
         run: deno test ./codes
 
       - name: Build
-        if: |
-          startsWith(matrix.os, 'ubuntu') ||
-          startsWith(matrix.os, 'macOS')
-        run: |
-          export PATH="$HOME/.deno/bin:$PATH"
-          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.7/mod.ts
-          pagic build
+        run: deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@0.7.7/mod.ts build
 
       - name: Deploy
         if: |
