@@ -13,7 +13,7 @@ export default {
   sidebar: [
     "README.md",
     "docs/install-deno.md",
-    "docs/docs/setup-environment.md",
+    "docs/setup-environment.md",
   ],
   nav: [
     {
