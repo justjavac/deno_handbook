@@ -33,7 +33,7 @@ curl -fsSL https://x.deno.js.cn/install.sh | sh
 Windows 系统上使用 PowerShell:
 
 ```ps
-iwr https://x.deno.js.cn/install.ps1 -useb -outf install.ps1; .\install.ps1
+iwr https://x.deno.js.cn/install.ps1 -useb | iex
 ```
 
 ## 使用包管理器
