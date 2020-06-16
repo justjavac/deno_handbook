@@ -10,17 +10,12 @@ jobs:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
 
-    env:
-      GH_ACTIONS: true
-      DENO_BUILD_MODE: release
-      V8_BINARY: true
-
     steps:
       - uses: actions/checkout@v2
       - name: Setup Deno
         uses: denolib/setup-deno@master
         with:
-          deno-version: 1.0.3
+          deno-version: 1.1.0
 
       - name: Cache Deno Generated Files
         uses: actions/cache@v1
@@ -33,3 +28,16 @@ jobs:
 
       - name: Tests
         run: deno test ./codes
+
+      - name: Build
+        run: |
+          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.6/mod.ts
+          pagic build
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push' && github.repository == 'justjavac/deno_handbook'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          cname: handbook.deno.js.cn
