@@ -17,12 +17,6 @@ jobs:
         with:
           deno-version: 1.1.0
 
-      - name: Cache Deno Generated Files
-        uses: actions/cache@v1
-        with:
-          path: ~/.cache/deno
-          key: ${{ runner.os }}-deno-cache-${{ hashFiles('**/mod.ts') }}
-
       - name: Format
         run: deno fmt ./codes --check
 
@@ -30,13 +24,20 @@ jobs:
         run: deno test ./codes
 
       - name: Build
+        if: |
+          startsWith(matrix.config.os, 'ubuntu') ||
+          startsWith(matrix.config.os, 'macOS')
         run: |
-          export PATH="$DENO_INSTALL/bin:$PATH"
-          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.6/mod.ts
+          export PATH="$HOME/.deno/bin:$PATH"
+          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.7/mod.ts
           pagic build
 
       - name: Deploy
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push' && github.repository == 'justjavac/deno_handbook'
+        if: |
+          startsWith(matrix.config.os, 'ubuntu') &&
+          github.ref == 'refs/heads/master' &&
+          github.event_name == 'push' &&
+          github.repository == 'justjavac/deno_handbook'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
