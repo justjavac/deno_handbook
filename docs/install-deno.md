@@ -114,6 +114,4 @@ scoop reset deno
 
 ----
 
-[目录](./README.md)
-
 下一章：[配置 Deno 开发环境](./setup-environment.md)

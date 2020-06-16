@@ -24,8 +24,6 @@
    1. 缓存 deno cache
    1. Linux Shell 自动补全 deno completions
 
-[更多...](./docs/)
-
 ## 捐赠
 
 如果这个教程对你有帮助，欢迎 star。如果这个仓库帮你提升了技能，可以请我喝杯咖啡：
