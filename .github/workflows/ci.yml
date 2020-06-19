@@ -24,7 +24,7 @@ jobs:
         run: deno test ./codes
 
       - name: Build
-        run: deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@0.7.7/mod.ts build
+        run: deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@0.7.8/mod.ts build
 
       - name: Deploy
         if: |
