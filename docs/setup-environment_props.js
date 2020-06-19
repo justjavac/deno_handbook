@@ -21,6 +21,8 @@ export default {
             {},
             {},
             {},
+            {},
+            {},
             {}
         ],
         "base": "/",
@@ -63,12 +65,15 @@ export default {
     'outputPath': "docs/setup-environment.html",
     'title': "配置 Deno 开发环境",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="%E9%85%8D%E7%BD%AE-deno-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">配置 Deno 开发环境 <a class="header-anchor" href="#%E9%85%8D%E7%BD%AE-deno-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">§</a></h1>\n'
+            __html: '<h1>配置 Deno 开发环境</h1>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/main.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol></ol></nav>'
+        } }),
     'sidebar': [
         {
             "text": "Deno 入门教程",

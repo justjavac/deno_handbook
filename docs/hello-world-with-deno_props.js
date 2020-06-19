@@ -21,6 +21,8 @@ export default {
             {},
             {},
             {},
+            {},
+            {},
             {}
         ],
         "base": "/",
@@ -63,12 +65,15 @@ export default {
     'outputPath': "docs/hello-world-with-deno.html",
     'title': "Hello World",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="hello-world">Hello World <a class="header-anchor" href="#hello-world">§</a></h1>\n'
+            __html: '<h1>Hello World</h1>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/main.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol></ol></nav>'
+        } }),
     'sidebar': [
         {
             "text": "Deno 入门教程",
