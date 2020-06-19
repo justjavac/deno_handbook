@@ -3,9 +3,11 @@ export default {
   ignore: [
     /\/codes\//,
     /\/public\//,
+    /\/\.git\//,
     /\/\.github\//,
     /\/\.vscode\//,
     /\/LICENSE/,
+    /\/pagic\.config\.ts/,
   ],
   theme: "docs",
   plugins: ["sidebar", "script", "ga"],
