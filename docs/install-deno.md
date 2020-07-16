@@ -101,17 +101,18 @@ scoop reset deno
 
 ## 测试安装是否成功
 
-检测 Deno 是否安装成功，可以通过执行 `deno --version` 验证
+检测 Deno 是否安装成功，可以通过执行 `deno --version` 验证。
 
 ## 升级版本
 
-要升级已安装的 deno 版本，执行
+要升级已安装的 deno 版本，执行：
 
 ```shell
 deno upgrade
-```  
+```
+
 该命令会从 [https://github.com/denoland/deno/releases](https://github.com/denoland/deno/releases) 获取最新的版本，解压并替换当前的可执行文件。
-也可以使用以下命令升级安装特定的版本
+也可以使用以下命令升级安装特定的版本：
 
 ```shell
 deno upgrade --version 1.0.1
