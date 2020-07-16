@@ -99,6 +99,25 @@ scoop reset deno
 ./deno mod.ts
 ```
 
+## 测试安装是否成功
+
+检测 Deno 是否安装成功，可以通过执行 `deno --version` 验证。
+
+## 升级版本
+
+要升级已安装的 deno 版本，执行：
+
+```shell
+deno upgrade
+```
+
+该命令会从 [https://github.com/denoland/deno/releases](https://github.com/denoland/deno/releases) 获取最新的版本，解压并替换当前的可执行文件。
+也可以使用以下命令升级安装特定的版本：
+
+```shell
+deno upgrade --version 1.0.1
+``` 
+
 ## 附加说明
 
 当你使用安装器成功把 Deno 安装到电脑上是，大部分情况安装脚本已经自动为你配置了 `DENO_INSTALL` 环境变量，指向 Deno 的安装路径。当你再一次执行安装脚本时，新的文件总会覆盖原有的。如果你改变了 `DENO_INSTALL` 的值，再次安装时会使用新的位置。
