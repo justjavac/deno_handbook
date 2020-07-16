@@ -66,6 +66,16 @@ scoop reset deno
 <p>你还可以把 Deno 可执行文件放到你的项目里面，这样就把当前 Deno 版本和项目绑定在了一起。如此一来使得项目分发变得简单，当别人拿到你的项目时，即使他的电脑上没有安装 Deno 也可以运行你的项目，只需要运行：</p>
 <pre class="language-shell"><code class="language-shell">./deno mod.ts
 </code></pre>
+<h2 id="%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F">测试安装是否成功<a class="anchor" href="#%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F">§</a></h2>
+<p>检测 Deno 是否安装成功，可以通过执行 <code>deno --version</code> 验证。</p>
+<h2 id="%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC">升级版本<a class="anchor" href="#%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC">§</a></h2>
+<p>要升级已安装的 deno 版本，执行：</p>
+<pre class="language-shell"><code class="language-shell">deno upgrade
+</code></pre>
+<p>该命令会从 <a href="https://github.com/denoland/deno/releases">https://github.com/denoland/deno/releases</a> 获取最新的版本，解压并替换当前的可执行文件。
+也可以使用以下命令升级安装特定的版本：</p>
+<pre class="language-shell"><code class="language-shell">deno upgrade --version <span class="token number">1.0</span>.1
+</code></pre>
 <h2 id="%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E">附加说明<a class="anchor" href="#%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E">§</a></h2>
 <p>当你使用安装器成功把 Deno 安装到电脑上是，大部分情况安装脚本已经自动为你配置了 <code>DENO_INSTALL</code> 环境变量，指向 Deno 的安装路径。当你再一次执行安装脚本时，新的文件总会覆盖原有的。如果你改变了 <code>DENO_INSTALL</code> 的值，再次安装时会使用新的位置。</p>
 <p>在某些情况 <code>DENO_INSTALL</code> 环境变量无法自动添加到系统，此时安装完成后你会收到提示，需要你手动设置 <code>DENO_INSTALL</code> 变量，并把 Deno 执行路径手动添加到 <code>PATH</code>，提示内容大概为：</p>
@@ -76,4 +86,4 @@ scoop reset deno
 </code></pre>
 <hr>
 <p>下一章：<a href="./setup-environment.html">配置 Deno 开发环境</a></p>
-</article></div><div class="main-toc"><aside><nav class="toc"><ol><li><a href="#%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E5%99%A8">使用安装器</a></li><li><a href="#%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8">使用包管理器</a></li><li><a href="#%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7">使用多版本管理工具</a></li><li><a href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6">直接下载二进制文件</a></li><li><a href="#%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E">附加说明</a></li></ol></nav></aside></div></section><script crossorigin="anonymous" src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script><script crossorigin="anonymous" src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/main.js"></script></body></html>
+</article></div><div class="main-toc"><aside><nav class="toc"><ol><li><a href="#%E4%BD%BF%E7%94%A8%E5%AE%89%E8%A3%85%E5%99%A8">使用安装器</a></li><li><a href="#%E4%BD%BF%E7%94%A8%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8">使用包管理器</a></li><li><a href="#%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7">使用多版本管理工具</a></li><li><a href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6">直接下载二进制文件</a></li><li><a href="#%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F">测试安装是否成功</a></li><li><a href="#%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC">升级版本</a></li><li><a href="#%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E">附加说明</a></li></ol></nav></aside></div></section><script crossorigin="anonymous" src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script><script crossorigin="anonymous" src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/main.js"></script></body></html>
