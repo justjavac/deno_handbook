@@ -4,7 +4,7 @@
 
 ## 前言
 
-本教程采用的 Deno 版本为 `v1.1.0`，std modules 版本为 `v0.57.0`。
+本教程采用的 Deno 版本为 `v1.3.0`，std modules 版本为 `v0.65.0`。
 
 本教程的目的是为 JavaScript/TypeScript 开发者提供一个 Deno 入门指南，虽然 Deno 是使用 Rust 和 V8 开发，但是本教程不会涉及到任何 Rust 与 V8 引擎相关知识。
 
