@@ -1,92 +1,35 @@
 import Ga from '/_ga.js';
+import projectConfig from '/pagic.config.js';
 export default {
-    'config': {
-        "srcDir": ".",
-        "publicDir": "public",
-        "ignore": [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {}
-        ],
-        "base": "/",
-        "theme": "docs",
-        "plugins": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        "watch": false,
-        "serve": false,
-        "port": 8000,
-        "title": "Deno 入门指南",
-        "sidebar": [
-            "README.md",
-            "docs/install-deno.md",
-            "docs/setup-environment.md"
-        ],
-        "nav": [
-            {
-                "text": "GitHub",
-                "link": "https://github.com/justjavac/deno_handbook"
-            },
-            {
-                "text": "社区",
-                "link": "http://deno.js.cn"
-            }
-        ],
-        "ga": {
-            "id": "UA-123999279-3"
+    'ga': React.createElement(Ga, { id: "UA-123999279-3" }),
+    'sidebar': [
+        {
+            "text": "Deno 入门教程",
+            "link": "index.html",
+            "pagePath": "README.md"
+        },
+        {
+            "text": "安装 Deno",
+            "link": "docs/install-deno.html",
+            "pagePath": "docs/install-deno.md"
+        },
+        {
+            "text": "配置 Deno 开发环境",
+            "link": "docs/setup-environment.html",
+            "pagePath": "docs/setup-environment.md"
         }
-    },
+    ],
+    config: { "root": "/", ...projectConfig },
     'pagePath': "docs/hello-world-with-deno.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "docs/hello-world-with-deno.html",
     'title': "Hello World",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Hello World</h1>\n'
+            __html: '<h1>Hello World</h1>'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/main.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol></ol></nav>'
-        } }),
-    'sidebar': [
-        {
-            "text": "Deno 入门教程",
-            "link": "index.html"
-        },
-        {
-            "text": "安装 Deno",
-            "link": "docs/install-deno.html"
-        },
-        {
-            "text": "配置 Deno 开发环境",
-            "link": "docs/setup-environment.html"
-        }
-    ],
-    'ga': React.createElement(Ga, { id: "UA-123999279-3" })
+        React.createElement("script", { src: "/index.js", type: "module" })),
+    'toc': null
 };
