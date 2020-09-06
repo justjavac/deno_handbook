@@ -9,17 +9,20 @@ export default {
   theme: "docs",
   plugins: ["sidebar", "script", "ga"],
   title: "Deno 入门指南",
+  github: "justjavac/deno_handbook",
   sidebar: {
     "/": ["README.md", "docs/install-deno.md", "docs/setup-environment.md"],
   },
   nav: [
     {
-      text: "GitHub",
-      link: "https://github.com/justjavac/deno_handbook",
+      text: "社区",
+      link: "https://deno.js.cn",
+      target: '_blank',
     },
     {
-      text: "社区",
-      link: "http://deno.js.cn",
+      text: "安装",
+      link: "https://x.deno.js.cn",
+      target: '_blank',
     },
   ],
   ga: {
